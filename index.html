@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo Bhaijaan 2', sans-serif;
+        }
+
+        body {
+            transition: filter 0.3s ease-out;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            background-color: #7FC7D9;
+            min-height: 20vh;
+            color: #DCF2F1;
+        }
+
+        .nav h1 {
+            justify-content: center;
+            align-self: center;
+            font-size: 50px;
+        }
+
+        .nav p {
+            justify-content: center;
+            align-self: center;
+            font-size: 20px;
+        }
+
+        .maini {
+            background-color: #DCF2F1;
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 1fr;
+            gap: 10px;
+        }
+
+        .imge {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .img-container:hover img {
+            transform: scale(1.2);
+            filter: blur(5px);
+        }
+
+        .img-container:hover .text-overlay {
+            opacity: 1;
+        }
+
+        .seperator {
+            height: 10px;
+            background: #365486;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 0%;
+            /* left: 50%; */
+            /* transform: translate(-50%, -50%); */
+            color: #fff;
+            font-size: 1.5rem;
+            opacity: 0;
+            transition: opacity 2s ease-out;
+        }
+
+        @media screen and (max-width:600px) {
+            .maini {
+                grid-template-columns: 1fr;
+            }
+            .maini .imge {
+                grid-column: 1/2;
+                padding: 10px;
+                transform: rotate(0deg);
+                display: flex;
+                justify-content: center;
+                align-self: center;
+            }
+            .nav {
+                display: flex;
+                flex-direction: column;
+            }
+            .nav h1 {
+                justify-content: flex-start;
+                align-self: flex-start;
+            }
+            .nav p {
+                align-self: flex-start;
+            }
+            .maini .imge img {
+                height: 60vh;
+                width: 90vw;
+                align-self: center;
+                /* justify-content: center; */
+
+            }
+            .maini .img-container{
+                align-self: center;
+            }
+            .maini h2 {
+                align-self: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="headi">MERE KITAAB</h1>
+        <p>Mana tere pass time nahi hai magar eska mtlb ye thodi hai mai feelings ne show karuga</p>
+    </div>
+    <div class="maini">
+        <div class="img1 imge">
+            <h2>New Year Old kuutte..</h2>
+            <div class="img-container">
+                <img height="400px" width="400px" src="./pics/1704477818905.jpg" alt="">
+                <div class="text-overlay">Dil se to haar ekk he likhta hu paar jab ye ne na padhi tune to nahi laga tha accha thik hai actully bura he laga tha...</div>
+            </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="img2 imge">
+            <h2>Zara sa gussa Zara sa pyar..</h2>
+            <div class="img-container">
+                <img height="400px" width="400px" src="./pics/1704477818922.jpg" alt="">
+                <div class="text-overlay">Haan yaar bolna hota bohot kuch meko tayari bhe ke hai mene kai bari par tere vo pehle hello sun ke he na bas khatam...</div>
+            </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="img3 imge">
+            <h2>Facts..</h2>
+            <div class="img-container">
+                <img height="400px" width="400px" src="./pics/1704477818942.jpg" alt="">
+                <div class="text-overlay">Dekh meko ne pta teko kitnak pta hai par kaise samghau yaar samagh ja na bohot khaas hai tu meko...</div>
+            </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="img4 imge">
+            <h2>Diwali..</h2>
+            <div class="img-container">
+                <img height="400px" width="400px" src="./pics/1704477818966.jpg" alt="">
+                <div class="text-overlay">Pta hai tere diwali akele likali the meko tha padhege to thoda accha lagega paar chlo mere shairiyon ke kismat vaise he ne acchi chal re...</div>
+            </div>
+        </div>
+        <div class="seperator"></div>
+        <div class="img5 imge">
+            <h2>Dost=You..</h2>
+            <div class="img-container">
+                <img height="400px" width="400px" src="./pics/1704477818987.jpg" alt="">
+                <div class="text-overlay">Teko ekk legit baat batau meko ne pta future kya hoga but tere se badiya meko koi ne samghega </div>
+            </div>
+        </div>
+        <div class="seperator"></div>
+    </div>
+
+    <script>
+        alert("Instructions::\n1.)This is only viewed to someone with this particular link\n2.)I'll keep updating and modifying it\n3.)Do click on every img before reading and to revert back click somewhere else")
+        
+    </script>
+</body>
+</html>
